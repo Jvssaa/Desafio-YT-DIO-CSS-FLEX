@@ -7,74 +7,88 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <nav class="navegacao">
-        <button>
-            <img src="assets/menu.svg" alt="">
-        </button>
-        <a href="">
-            <img src="assets/youtubelogo.png" alt="Imagem de Logo do Youtube">
-        </a>
-        <form action="Pesquisa">
-            <input type="text">
-            <input type="button" value="">
+        <div class="nav-div1">
+            <button id="menu" class="buttom-nav">
+                <img src="assets/menu.svg" id="menu-ico" alt="">
+            </button>
+            <a href="" id="logo">
+                <img src="assets/youtubelogo.png" alt="Imagem de Logo do Youtube">
+            </a>
+        </div>
+        <form action="Pesquisa" id="pesquisa">
+            <input id="text" type="text">
+            <input type="button" id="submit" value="">
         </form>
-        <button>
-            <img src="assets/video.svg" alt="">
-        </button>
-        <button>
-            <img src="assets/bell.svg" alt="">
-        </button>
-        <button>
-            <img src="https://yt3.ggpht.com/yti/ANjgQV8bVGC7kDGt7E2GkmiVJyIixDRrejiHSHvvYI0s_ly8tg=s108-c-k-c0x00ffffff-no-rj" alt="">
-        </button>
+        <div class="nav-div2">
+            <button class="buttom-nav">
+                <img src="assets/video.svg" alt="">
+            </button>
+            <button class="buttom-nav">
+                <img src="assets/bell.svg" alt="">
+            </button>
+            <button class="buttom-nav">
+                <img src="https://yt3.ggpht.com/yti/ANjgQV8bVGC7kDGt7E2GkmiVJyIixDRrejiHSHvvYI0s_ly8tg=s108-c-k-c0x00ffffff-no-rj" class="foto" id="foto-canal" alt="">
+            </button>
+        </div>
     </nav>
+
     <main class="video-area">
         
         <div id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/m1rz10Qz7-k?si=Fp4b4aXdeyloBiS9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="952" height="537" src="https://www.youtube.com/embed/m1rz10Qz7-k?si=Fp4b4aXdeyloBiS9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <h1>Bonk | Valheim</h1>
         <div class="barra-inscricao">
-            <img src="https://yt3.ggpht.com/yti/ANjgQV8bVGC7kDGt7E2GkmiVJyIixDRrejiHSHvvYI0s_ly8tg=s108-c-k-c0x00ffffff-no-rj" alt="img-canal">
-            <span>
-                Titulo Canal
-            </span>
-            <span>
-                Incricoes
-            </span>
-            <button>INSCREVA-SE</button>
-            <button>
+            <a href="" id="info-canal">
+                <img src="https://yt3.ggpht.com/yti/ANjgQV8bVGC7kDGt7E2GkmiVJyIixDRrejiHSHvvYI0s_ly8tg=s108-c-k-c0x00ffffff-no-rj" alt="img-canal" class="foto">
+                <div id="canal-text">
+                    <span id="title-canal">
+                        JVgameplays
+                    </span>
+                    <span id="inscritos-info">
+                        Incricoes
+                    </span>
+                </div>
+            </a>
+            <button class="botao-inscricao" id="inscreva-se">
+                INSCREVA-SE
+            </button>
+            <button class="botao-inscricao">
                 <img src="assets/thumbs-up.svg" alt="">
                 <span>
                     Gostei
                 </span>
             </button>
-            <button>
+            <button class="botao-inscricao">
                 <img src="assets/thumbs-down.svg" alt="">
                 <span>
                     Não Gostei
                 </span>
-            </button>
-            <button>
+            </button class="botao-inscricao">
+            <button class="botao-inscricao">
                 <img src="assets/share-2.svg" alt="">
                 <span>
                     Compartilhar
                 </span>
             </button>
-            <button>
+            <button class="botao-inscricao">
                 <img src="assets/download.svg" alt="">
                 <span>
                     Download
                 </span>
             </button>
         </div>
-        <span>
-            96.432 visualizacoes
-        </span>
-        <span>
-            Transmitido ao vivo em 23 ago. de 2022
-        </span>
+        <div id="video-info">
+            <span>
+                96.432 visualizacoes
+            </span>
+            <span>
+                Transmitido ao vivo em 23 ago. de 2022
+            </span>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia quae voluptas suscipit quos repudiandae, assumenda tempora esse quisquam numquam veniam ducimus! Necessitatibus minima quis quae consequatur consequuntur explicabo ad.</p>
     </main>
     <sidebar class="">
@@ -82,9 +96,18 @@
             <li>
                 <img src="assets/image 15.png" alt="">
                 <div>
+                    <h2>Python do zero</h2>
+                    <span>Digital inovation week</span>
+                    <span>1.234 visualizacoes</span>
+                    <span>transmitido há 3 dias</span>
+                </div>
+            </li>
+            <li>
+                <img src="assets/image 15.png" alt="">
+                <div>
                     <h2>video</h2>
                     <span>Nome canal</span>
-                    <span>1234 visualizacoes</span>
+                    <span>12.345 visualizacoes</span>
                     <span>data info</span>
                 </div>
             </li>
@@ -93,16 +116,7 @@
                 <div>
                     <h2>video</h2>
                     <span>Nome canal</span>
-                    <span>1234 visualizacoes</span>
-                    <span>data info</span>
-                </div>
-            </li>
-            <li>
-                <img src="assets/image 15.png" alt="">
-                <div>
-                    <h2>video</h2>
-                    <span>Nome canal</span>
-                    <span>1234 visualizacoes</span>
+                    <span>123.456 visualizacoes</span>
                     <span>data info</span>
                 </div>
             </li>
